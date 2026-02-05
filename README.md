@@ -1,107 +1,76 @@
-# FCS Commercial Services - SEO Landing Pages
+# Commercial Foundation Services Website
 
-Production-ready HTML mockups for the commercial services section of [fcsfoundationandconcrete.com](https://fcsfoundationandconcrete.com).
+> **Internal mockup for team review - Not for public distribution**
 
-## Project Overview
+[![Live Demo](https://img.shields.io/badge/Demo-Live-success.svg)](https://syncshepherd-main.github.io/Claude_FCS_Commerical_Mockup/commercial-services/)
 
-This repository contains a complete set of SEO-optimized landing pages for FCS Foundation & Concrete Services' commercial division. The pages follow a hub-and-spoke content architecture designed to capture commercial foundation repair search traffic in the Dallas-Fort Worth market.
+## 🌐 Live Demo
 
-## Site Architecture
-
-```
-commercial-services/
-├── index.html                    ← Main hub page
-│
-├── SECTOR PAGES (5 industries)
-│   ├── multi-family/index.html   ← Apartments, condos, townhomes
-│   ├── office-corporate/index.html ← Office buildings, campuses
-│   ├── industrial/index.html     ← Warehouses, distribution, manufacturing
-│   ├── medical-offices/index.html ← Clinics, MOBs, dental, rehab
-│   └── home-builders/index.html  ← Production, custom, developers
-│
-├── SERVICE PAGES (6 core services)
-│   ├── foundation-repair.html
-│   ├── drainage-solutions.html
-│   ├── mudjacking-void-fill.html
-│   ├── retaining-walls.html
-│   ├── concrete-services.html
-│   └── excavation.html
-│
-└── assets/
-    ├── css/fcs-commercial.css    ← Shared stylesheet
-    └── js/fcs-commercial.js      ← Shared JavaScript (FAQ, nav)
-```
-
-## Pages Included
-
-### Phase 1: Hub + Sector Pages (12 pages)
-| Page | URL | Target Keywords |
-|------|-----|-----------------|
-| Commercial Hub | `/commercial-services/` | commercial foundation repair Dallas |
-| Multi-Family | `/commercial-services/multi-family/` | apartment foundation repair Dallas |
-| Office/Corporate | `/commercial-services/office-corporate/` | office building foundation repair |
-| Industrial | `/commercial-services/industrial/` | warehouse foundation repair Dallas |
-| Medical Offices | `/commercial-services/medical-offices/` | medical building foundation repair |
-| Home Builders | `/commercial-services/home-builders/` | builder foundation services Dallas |
-
-### Phase 2: Core Service Pages (6 pages)
-| Page | URL | Target Keywords |
-|------|-----|-----------------|
-| Foundation Repair | `/commercial-services/foundation-repair/` | commercial foundation repair |
-| Drainage Solutions | `/commercial-services/drainage-solutions/` | commercial drainage Dallas |
-| Mudjacking/Void Fill | `/commercial-services/mudjacking-void-fill/` | commercial mudjacking |
-| Retaining Walls | `/commercial-services/retaining-walls/` | commercial retaining walls |
-| Concrete Services | `/commercial-services/concrete-services/` | commercial concrete Dallas |
-| Excavation | `/commercial-services/excavation/` | commercial excavation |
-
-## Technical Features
-
-- **Shared CSS/JS**: All pages use `assets/css/fcs-commercial.css` and `assets/js/fcs-commercial.js`
-- **Working Navigation**: Dropdown mega-nav with links between all pages
-- **Responsive Design**: Mobile-first with breakpoints at 480, 550, 600, 700, 900, and 1000px
-- **Schema Markup**: FAQ schema on all pages, LocalBusiness + Service on sector pages
-- **FAQ Accordions**: JavaScript-powered FAQ sections with schema
-- **FCS Brand System**: Orange (#f7941d), Blue Dark (#1a2b47), Montserrat + Open Sans
-- **Breadcrumb Navigation**: Full breadcrumb trail on all sub-pages
-- **Internal Linking**: Hub → Sector → Service cross-linking structure
-
-## Deployment Options
-
-### Option A: Static HTML (Recommended for Review)
-Open any `index.html` in a browser. Navigation uses relative paths.
-
-### Option B: WordPress Integration
-1. Create pages in WordPress matching the URL structure
-2. Copy HTML content into each page template
-3. Enqueue `fcs-commercial.css` in your theme
-4. Add `fcs-commercial.js` to your theme's scripts
-
-### Option C: WordPress Plugin / Custom Post Type
-Create a custom page template that loads the shared CSS/JS and uses the HTML as content blocks.
-
-## Brand Design Tokens
-
-```css
---fcs-orange: #f7941d
---fcs-orange-dark: #e07d0a
---fcs-blue-dark: #1a2b47
---fcs-blue-medium: #2c4a6e
---font-heading: 'Montserrat'
---font-body: 'Open Sans'
-```
-
-## Future Phases
-
-- **Phase 3**: 25 sector-service intersection pages (e.g., `/multi-family/foundation-repair/`)
-- **Phase 4**: GPR services, multi-family sub-type pages, individual case studies
-
-## SEO Strategy Documents
-
-See `/docs/` folder for:
-- `SITE-ARCHITECTURE.md` - Full URL structure and keyword mapping
-- `FCS-Foundation-SEO-Audit-Report.md` - Technical SEO audit
-- `FCS-Competitive-Analysis-Report.md` - Competitive landscape analysis
+**View Site:** [https://syncshepherd-main.github.io/Claude_FCS_Commerical_Mockup/commercial-services/](https://syncshepherd-main.github.io/Claude_FCS_Commerical_Mockup/commercial-services/)
 
 ---
 
-Built for **FCS Foundation Repair and Concrete Services** | Dallas-Fort Worth, TX | 877-554-8284
+## 📋 Project Overview
+
+Comprehensive commercial foundation services website featuring a hub-and-spoke content architecture with 42 SEO-optimized HTML pages for the Dallas-Fort Worth market.
+
+### Key Features
+
+- **42 Total Pages** - Hub + Sector + Service + Intersection pages
+- **Static HTML/CSS/JS** - Pure static site with shared assets
+- **Mobile-Responsive** - Optimized for all devices
+- **Schema Markup** - FAQ and LocalBusiness structured data
+- **Working Navigation** - Fully functional mega-nav and breadcrumbs
+
+---
+
+## 📄 Site Structure
+
+### Hub Page (1 page)
+**URL:** `/commercial-services/`
+
+### Sector Pages (5 pages)
+| Sector | URL |
+|--------|-----|
+| **Multi-Family** | `/commercial-services/multi-family/` |
+| **Office/Corporate** | `/commercial-services/office-corporate/` |
+| **Industrial** | `/commercial-services/industrial/` |
+| **Medical Offices** | `/commercial-services/medical-offices/` |
+| **Home Builders** | `/commercial-services/home-builders/` |
+
+### Core Service Pages (6 pages)
+| Service | URL |
+|---------|-----|
+| **Foundation Repair** | `/commercial-services/foundation-repair.html` |
+| **Drainage Solutions** | `/commercial-services/drainage-solutions.html` |
+| **Mudjacking/Void Fill** | `/commercial-services/mudjacking-void-fill.html` |
+| **Retaining Walls** | `/commercial-services/retaining-walls.html` |
+| **Concrete Services** | `/commercial-services/concrete-services.html` |
+| **Excavation** | `/commercial-services/excavation.html` |
+
+### Sector-Service Intersection Pages (30 pages)
+Each of the 5 sectors has all 6 service pages (5 × 6 = 30 pages)
+
+Example: `/commercial-services/multi-family/foundation-repair.html`
+
+---
+
+## 🎨 Technical Details
+
+- **Shared Assets:** `assets/css/fcs-commercial.css` and `assets/js/fcs-commercial.js`
+- **Brand Colors:** Orange (#f7941d), Blue Dark (#1a2b47)
+- **Typography:** Montserrat (headings) + Open Sans (body)
+- **Responsive Breakpoints:** 480, 550, 600, 700, 900, 1000px
+- **JavaScript Features:** FAQ accordions, dropdown navigation
+
+---
+
+## 📝 License
+
+Proprietary - © 2026 Commercial Foundation Services
+
+All rights reserved. This code is proprietary and confidential. For internal use only.
+
+---
+
+*For team and VA review purposes only. Not for public distribution or replication.*
