@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Foundation & Concrete Services Dallas | FCS Foundation</title>
+    <meta name="description" content="Commercial foundation repair, concrete services, drainage solutions & excavation in Dallas-Fort Worth. Serving multi-family, office, industrial & medical properties. Free estimates.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ==============================================
+           FCS COMMERCIAL SERVICES - STYLE GUIDE
+           Matches existing FCS website design system
+           ============================================== */
+        
+        :root {
+            --fcs-orange: #f7941d;
+            --fcs-orange-dark: #e07d0a;
+            --fcs-orange-light: rgba(247, 148, 29, 0.1);
+            --fcs-blue-dark: #1a2b47;
+            --fcs-blue-medium: #2c4a6e;
+            --fcs-gray-dark: #333333;
+            --fcs-gray-medium: #666666;
+            --fcs-gray-light: #f5f5f5;
+            --fcs-white: #ffffff;
+            --font-heading: 'Montserrat', sans-serif;
+            --font-body: 'Open Sans', sans-serif;
+            --section-padding: 80px 0;
+            --container-max: 1200px;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: var(--font-body);
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--fcs-gray-dark);
+        }
+        
+        .container {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        .header {
+            background: var(--fcs-blue-dark);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo img { height: 50px; }
+        
+        .header-phone {
+            background: var(--fcs-orange);
+            color: var(--fcs-white);
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 18px;
+            transition: background 0.3s;
+        }
+        
+        .header-phone:hover { background: var(--fcs-orange-dark); }
+        
+        .nav-placeholder {
+            background: var(--fcs-blue-medium);
+            padding: 12px 0;
+            text-align: center;
+            color: rgba(255,255,255,0.8);
+            font-size: 14px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(26, 43, 71, 0.9), rgba(26, 43, 71, 0.85)), 
+                        url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920') center/cover;
+            padding: 100px 0;
+            text-align: center;
+            color: var(--fcs-white);
+        }
+        
+        .hero-label {
+            display: inline-block;
+            background: var(--fcs-orange);
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-family: var(--font-heading);
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+        
+        .hero h1 {
+            font-family: var(--font-heading);
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        
+        .hero h1 span { color: var(--fcs-orange); }
+        
+        .hero-text {
+            font-size: 20px;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            opacity: 0.95;
+        }
+        
+        .hero-cta {
+            display: inline-block;
+            background: var(--fcs-orange);
+            color: var(--fcs-white);
+            padding: 18px 40px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 18px;
+            text-transform: uppercase;
+            transition: all 0.3s;
+        }
+        
+        .hero-cta:hover {
+            background: var(--fcs-orange-dark);
+            transform: translateY(-2px);
+        }
+        
+        /* Trust Bar */
+        .trust-bar {
+            background: var(--fcs-gray-light);
+            padding: 25px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .trust-items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+        
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            color: var(--fcs-blue-dark);
+            font-size: 15px;
+        }
+        
+        .trust-item svg {
+            width: 28px;
+            height: 28px;
+            fill: var(--fcs-orange);
+        }
+        
+        /* Section Styles */
+        .section { padding: var(--section-padding); }
+        .section-gray { background: var(--fcs-gray-light); }
+        .section-dark { background: var(--fcs-blue-dark); color: var(--fcs-white); }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-label {
+            display: inline-block;
+            color: var(--fcs-orange);
+            font-family: var(--font-heading);
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+        
+        .section-title {
+            font-family: var(--font-heading);
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--fcs-blue-dark);
+            margin-bottom: 15px;
+        }
+        
+        .section-title span { color: var(--fcs-orange); }
+        .section-dark .section-title { color: var(--fcs-white); }
+        
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--fcs-gray-medium);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .section-dark .section-subtitle { color: rgba(255,255,255,0.8); }
+        
+        /* =============================================
+           SECTORS GRID - Industries We Serve
+           ============================================= */
+        .sectors-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 25px;
+        }
+        
+        @media (max-width: 1100px) {
+            .sectors-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+        
+        @media (max-width: 700px) {
+            .sectors-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        
+        @media (max-width: 480px) {
+            .sectors-grid { grid-template-columns: 1fr; }
+        }
+        
+        .sector-card {
+            background: var(--fcs-white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .sector-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .sector-image {
+            height: 160px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .sector-image::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(transparent 50%, rgba(26,43,71,0.7));
+        }
+        
+        .sector-icon {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            width: 50px;
+            height: 50px;
+            background: var(--fcs-orange);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+        }
+        
+        .sector-icon svg {
+            width: 28px;
+            height: 28px;
+            fill: var(--fcs-white);
+        }
+        
+        .sector-content {
+            padding: 20px;
+        }
+        
+        .sector-content h3 {
+            font-family: var(--font-heading);
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--fcs-blue-dark);
+            margin-bottom: 8px;
+        }
+        
+        .sector-content p {
+            font-size: 14px;
+            color: var(--fcs-gray-medium);
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+        
+        .sector-link {
+            color: var(--fcs-orange);
+            font-weight: 600;
+            font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            transition: gap 0.3s;
+        }
+        
+        .sector-card:hover .sector-link { gap: 10px; }
+        
+        /* =============================================
+           SERVICES GRID - Core Service Offerings
+           ============================================= */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+        
+        @media (max-width: 1000px) {
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        
+        @media (max-width: 550px) {
+            .services-grid { grid-template-columns: 1fr; }
+        }
+        
+        .service-card {
+            background: var(--fcs-white);
+            border-radius: 10px;
+            padding: 30px 25px;
+            text-align: center;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.06);
+            transition: all 0.3s;
+            text-decoration: none;
+            color: inherit;
+            border: 2px solid transparent;
+        }
+        
+        .service-card:hover {
+            border-color: var(--fcs-orange);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .service-icon-circle {
+            width: 70px;
+            height: 70px;
+            background: var(--fcs-orange-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            transition: background 0.3s;
+        }
+        
+        .service-card:hover .service-icon-circle {
+            background: var(--fcs-orange);
+        }
+        
+        .service-icon-circle svg {
+            width: 32px;
+            height: 32px;
+            fill: var(--fcs-orange);
+            transition: fill 0.3s;
+        }
+        
+        .service-card:hover .service-icon-circle svg {
+            fill: var(--fcs-white);
+        }
+        
+        .service-card h3 {
+            font-family: var(--font-heading);
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--fcs-blue-dark);
+            margin-bottom: 10px;
+        }
+        
+        .service-card p {
+            font-size: 14px;
+            color: var(--fcs-gray-medium);
+            line-height: 1.5;
+        }
+        
+        /* =============================================
+           WHY CHOOSE FCS - Two Column
+           ============================================= */
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        @media (max-width: 900px) {
+            .two-col { grid-template-columns: 1fr; gap: 40px; }
+        }
+        
+        .two-col-image {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.15);
+        }
+        
+        .two-col-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .two-col-content h2 {
+            font-family: var(--font-heading);
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--fcs-blue-dark);
+            margin-bottom: 20px;
+        }
+        
+        .two-col-content h2 span { color: var(--fcs-orange); }
+        
+        .two-col-content p {
+            color: var(--fcs-gray-medium);
+            margin-bottom: 20px;
+        }
+        
+        .benefits-list {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+        
+        .benefits-list li {
+            padding: 12px 0;
+            padding-left: 35px;
+            position: relative;
+            color: var(--fcs-gray-dark);
+            border-bottom: 1px solid #eee;
+        }
+        
+        .benefits-list li:last-child { border-bottom: none; }
+        
+        .benefits-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 12px;
+            width: 24px;
+            height: 24px;
+            background: var(--fcs-orange);
+            color: var(--fcs-white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 700;
+        }
+        
+        .btn-primary {
+            display: inline-block;
+            background: var(--fcs-orange);
+            color: var(--fcs-white);
+            padding: 15px 35px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary:hover {
+            background: var(--fcs-orange-dark);
+            transform: translateY(-2px);
+        }
+        
+        /* =============================================
+           PROCESS STEPS
+           ============================================= */
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+        
+        @media (max-width: 900px) {
+            .process-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        
+        @media (max-width: 550px) {
+            .process-grid { grid-template-columns: 1fr; }
+        }
+        
+        .process-step {
+            text-align: center;
+            position: relative;
+        }
+        
+        .process-step::after {
+            content: '→';
+            position: absolute;
+            right: -20px;
+            top: 35px;
+            font-size: 24px;
+            color: var(--fcs-orange);
+        }
+        
+        .process-step:last-child::after { display: none; }
+        
+        @media (max-width: 900px) {
+            .process-step:nth-child(2)::after { display: none; }
+        }
+        
+        @media (max-width: 550px) {
+            .process-step::after { display: none; }
+        }
+        
+        .step-number {
+            width: 70px;
+            height: 70px;
+            background: var(--fcs-orange);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-family: var(--font-heading);
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--fcs-white);
+        }
+        
+        .process-step h3 {
+            font-family: var(--font-heading);
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--fcs-blue-dark);
+            margin-bottom: 10px;
+        }
+        
+        .process-step p {
+            font-size: 14px;
+            color: var(--fcs-gray-medium);
+        }
+        
+        /* =============================================
+           FAQ SECTION
+           ============================================= */
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: var(--fcs-white);
+            border-radius: 8px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 22px 25px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: var(--font-heading);
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--fcs-blue-dark);
+            transition: background 0.3s;
+        }
+        
+        .faq-question:hover { background: var(--fcs-gray-light); }
+        
+        .faq-toggle {
+            width: 28px;
+            height: 28px;
+            background: var(--fcs-orange);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--fcs-white);
+            font-size: 20px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        
+        .faq-item.active .faq-toggle { background: var(--fcs-blue-dark); }
+        
+        .faq-answer {
+            padding: 0 25px 22px;
+            color: var(--fcs-gray-medium);
+            display: none;
+            line-height: 1.7;
+        }
+        
+        .faq-item.active .faq-answer { display: block; }
+        
+        /* =============================================
+           CTA BANNER
+           ============================================= */
+        .cta-banner {
+            background: linear-gradient(135deg, var(--fcs-orange), var(--fcs-orange-dark));
+            padding: 70px 0;
+            text-align: center;
+            color: var(--fcs-white);
+        }
+        
+        .cta-banner h2 {
+            font-family: var(--font-heading);
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        .cta-banner p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .btn-white {
+            display: inline-block;
+            background: var(--fcs-white);
+            color: var(--fcs-orange);
+            padding: 16px 35px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        
+        .btn-white:hover {
+            background: var(--fcs-blue-dark);
+            color: var(--fcs-white);
+        }
+        
+        .btn-outline-white {
+            display: inline-block;
+            background: transparent;
+            color: var(--fcs-white);
+            padding: 14px 33px;
+            border: 2px solid var(--fcs-white);
+            border-radius: 5px;
+            text-decoration: none;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        
+        .btn-outline-white:hover {
+            background: var(--fcs-white);
+            color: var(--fcs-orange);
+        }
+        
+        /* =============================================
+           SERVICE AREAS
+           ============================================= */
+        .areas-flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+        
+        .area-pill {
+            background: var(--fcs-white);
+            padding: 10px 22px;
+            border-radius: 25px;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--fcs-blue-dark);
+            text-decoration: none;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            transition: all 0.3s;
+        }
+        
+        .area-pill:hover {
+            background: var(--fcs-orange);
+            color: var(--fcs-white);
+            transform: translateY(-2px);
+        }
+        
+        /* =============================================
+           FOOTER
+           ============================================= */
+        .footer {
+            background: var(--fcs-blue-dark);
+            color: var(--fcs-white);
+            padding: 60px 0 30px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        @media (max-width: 900px) {
+            .footer-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        
+        @media (max-width: 550px) {
+            .footer-grid { grid-template-columns: 1fr; }
+        }
+        
+        .footer h4 {
+            font-family: var(--font-heading);
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--fcs-orange);
+            margin-bottom: 20px;
+        }
+        
+        .footer ul { list-style: none; }
+        
+        .footer ul li { margin-bottom: 10px; }
+        
+        .footer ul li a {
+            color: rgba(255,255,255,0.75);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+        
+        .footer ul li a:hover { color: var(--fcs-orange); }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 25px;
+            text-align: center;
+            color: rgba(255,255,255,0.5);
+            font-size: 13px;
+        }
+        
+        .footer-bottom a {
+            color: rgba(255,255,255,0.5);
+            text-decoration: none;
+        }
+        
+        .footer-bottom a:hover { color: var(--fcs-orange); }
+    </style>
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "FCS Foundation Repair and Concrete Services",
+        "description": "Commercial foundation repair, concrete services, drainage solutions, retaining walls, and excavation for multi-family, office, industrial, and medical properties in Dallas-Fort Worth.",
+        "image": "https://fcsfoundationandconcrete.com/wp-content/uploads/2024/10/FCS-Logo-White.png",
+        "telephone": "877-554-8284",
+        "email": "info@fcsfoundationandconcrete.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Dallas",
+            "addressRegion": "TX",
+            "postalCode": "75201"
+        },
+        "areaServed": ["Dallas", "Fort Worth", "Plano", "Frisco", "McKinney", "Richardson", "Irving", "Garland", "Arlington"],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "295"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Commercial Services",
+            "itemListElement": [
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Commercial Foundation Repair"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Commercial Drainage Solutions"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Mudjacking & Void Fill"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Retaining Wall Construction"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Excavation Services"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Commercial Concrete Services"}}
+            ]
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- =============================================
+         HEADER
+         ============================================= -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="/" class="logo">
+                <img src="https://fcsfoundationandconcrete.com/wp-content/uploads/2024/10/FCS-Logo-White.png" alt="FCS Foundation Repair Logo">
+            </a>
+            <a href="tel:877-554-8284" class="header-phone">877-554-8284</a>
+        </div>
+    </header>
+    
+    <nav class="nav-placeholder">
+        [Navigation: Foundation Repair | Concrete Contractor | Concrete Services | <strong>Commercial Services</strong> | About FCS | Contact Us]
+    </nav>
+    
+    <!-- =============================================
+         HERO SECTION
+         ============================================= -->
+    <section class="hero">
+        <div class="container">
+            <span class="hero-label">Commercial Division</span>
+            <h1>Commercial <span>Foundation & Concrete</span><br>Services in Dallas-Fort Worth</h1>
+            <p class="hero-text">Trusted by property managers, facility directors, and home builders across DFW. From multi-family communities to industrial facilities, we deliver expert foundation repair, concrete services, and drainage solutions with minimal disruption to your operations.</p>
+            <a href="/free-foundation-evaluation/" class="hero-cta">Request Free Commercial Evaluation</a>
+        </div>
+    </section>
+    
+    <!-- =============================================
+         TRUST BAR
+         ============================================= -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-items">
+                <div class="trust-item">
+                    <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                    <span>25+ Years Experience</span>
+                </div>
+                <div class="trust-item">
+                    <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/></svg>
+                    <span>Fully Licensed & Insured</span>
+                </div>
+                <div class="trust-item">
+                    <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <span>5.0 Star Rating (295 Reviews)</span>
+                </div>
+                <div class="trust-item">
+                    <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                    <span>Lifetime Transferable Warranty</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- =============================================
+         INDUSTRIES WE SERVE (Sectors)
+         ============================================= -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Industries We Serve</span>
+                <h2 class="section-title">Commercial <span>Sectors</span></h2>
+                <p class="section-subtitle">We understand the unique foundation and concrete challenges faced by different commercial property types. Select your industry to learn about our specialized solutions.</p>
+            </div>
+            
+            <div class="sectors-grid">
+                <!-- Multi-Family -->
+                <a href="/commercial-services/multi-family/" class="sector-card">
+                    <div class="sector-image" style="background-image: url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600')">
+                        <div class="sector-icon">
+                            <svg viewBox="0 0 24 24"><path d="M17 11V3H7v4H3v14h8v-4h2v4h8V11h-4zM7 19H5v-2h2v2zm0-4H5v-2h2v2zm0-4H5V9h2v2zm4 4H9v-2h2v2zm0-4H9V9h2v2zm0-4H9V5h2v2zm4 8h-2v-2h2v2zm0-4h-2V9h2v2zm0-4h-2V5h2v2zm4 12h-2v-2h2v2zm0-4h-2v-2h2v2z"/></svg>
+                        </div>
+                    </div>
+                    <div class="sector-content">
+                        <h3>Multi-Family</h3>
+                        <p>Apartments, townhomes, condos, student housing, senior living & more.</p>
+                        <span class="sector-link">View Solutions →</span>
+                    </div>
+                </a>
+                
+                <!-- Office / Corporate -->
+                <a href="/commercial-services/office-corporate/" class="sector-card">
+                    <div class="sector-image" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=600')">
+                        <div class="sector-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg>
+                        </div>
+                    </div>
+                    <div class="sector-content">
+                        <h3>Office / Corporate</h3>
+                        <p>Office buildings, corporate campuses, professional centers.</p>
+                        <span class="sector-link">View Solutions →</span>
+                    </div>
+                </a>
+                
+                <!-- Industrial -->
+                <a href="/commercial-services/industrial/" class="sector-card">
+                    <div class="sector-image" style="background-image: url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600')">
+                        <div class="sector-icon">
+                            <svg viewBox="0 0 24 24"><path d="M19 3H9v5H3v13h18V3h-2zm-8 14H5v-2h6v2zm0-4H5v-2h6v2zm0-4H5v-2h6v2zm8 8h-6V5h6v12z"/></svg>
+                        </div>
+                    </div>
+                    <div class="sector-content">
+                        <h3>Industrial</h3>
+                        <p>Warehouses, distribution centers, manufacturing facilities.</p>
+                        <span class="sector-link">View Solutions →</span>
+                    </div>
+                </a>
+                
+                <!-- Medical Offices -->
+                <a href="/commercial-services/medical-offices/" class="sector-card">
+                    <div class="sector-image" style="background-image: url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600')">
+                        <div class="sector-icon">
+                            <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"/></svg>
+                        </div>
+                    </div>
+                    <div class="sector-content">
+                        <h3>Medical Offices</h3>
+                        <p>Medical buildings, clinics, healthcare facilities.</p>
+                        <span class="sector-link">View Solutions →</span>
+                    </div>
+                </a>
+                
+                <!-- Home Builders -->
+                <a href="/commercial-services/home-builders/" class="sector-card">
+                    <div class="sector-image" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600')">
+                        <div class="sector-icon">
+                            <svg viewBox="0 0 24 24"><path d="M22 9.74l-2 1.02V8h-2v3.79L12 8.5l-10 5.1v1.24l10-5.09 10 5.09V9.74zM8 20H6v-6l6-3.09L18 14v6h-2v-5h-8v5zm10 0h-2v-3h-8v3H6l6-3.09L18 20z"/></svg>
+                        </div>
+                    </div>
+                    <div class="sector-content">
+                        <h3>Home Builders</h3>
+                        <p>New construction support, builder partnerships, warranty repairs.</p>
+                        <span class="sector-link">View Solutions →</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- =============================================
+         CORE SERVICE OFFERINGS
+         ============================================= -->
+    <section class="section section-gray">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">What We Do</span>
+                <h2 class="section-title">Core <span>Service Offerings</span></h2>
+                <p class="section-subtitle">Comprehensive foundation, concrete, and site services for commercial properties of all types and sizes.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Foundation Evaluations -->
+                <a href="/commercial-services/foundation-evaluations/" class="service-card">
+                    <div class="service-icon-circle">
+                        <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                    </div>
+                    <h3>Free Foundation Evaluations</h3>
+                    <p>Comprehensive assessments with detailed reports for property decisions.</p>
+                </a>
+                
+                <!-- Foundation Repair -->
+                <a href="/commercial-services/foundation-repair/" class="service-card">
+                    <div class="service-icon-circle">
+                        <svg viewBox="0 0 24 24"><path d="M19 12h-2v3h-3v2h5v-5zM7 9h3V7H5v5h2V9zm14-6H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16.01H3V4.99h18v14.02z"/></svg>
+                    </div>
+                    <h3>Foundation Repair</h3>
+                    <p>Steel piers, concrete piers, and structural stabilization solutions.</p>
+                </a>
+                
+                <!-- Mudjacking -->
+                <a href="/commercial-services/mudjacking-void-fill/" class="service-card">
+                    <div class="service-icon-circle">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                    </div>
+                    <h3>Mudjacking / Void Fill</h3>
+                    <p>Concrete leveling and void filling for slabs and pavements.</p>
+                </a>
+                
+                <!-- Retaining Walls -->
+                <a href="/commercial-services/retaining-walls/" class="service-card">
+                    <div class="service-icon-circle">
+                        <svg viewBox="0 0 24 24"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg>
+                    </div>
+                    <h3>Retaining Walls</h3>
+                    <p>Construction and repair of commercial retaining structures.</p>
+                </a>
+                
+                <!-- Excavation -->
+                <a href="/commercial-services/excavation/" class="service-card">
+                    <div class="service-icon-circle">
+                        <svg viewBox="0 0 24 24"><path d="M18.93 11L15.93 3H8.07L5.07 11H1V13H2.95L5.74 21H9.91L12.5 15L15.09 21H19.26L22.05 13H24V11H18.93ZM7.71 11L9.31 7H14.69L16.29 11H7.71Z"/></svg>
+                    </div>
+                    <h3>Excavation</h3>
+                    <p>Site preparation, grading, and foundation excavation services.</p>
+                </a>
+                
+                <!-- Drainage -->
+                <a href="/commercial-services/drainage-solutions/" class="service-card">
+                    <div class="service-icon-circle">
+                        <svg viewBox="0 0 24 24"><path d="M17 16l-4-4V8.82C14.16 8.4 15 7.3 15 6c0-1.66-1.34-3-3-3S9 4.34 9 6c0 1.3.84 2.4 2 2.82V12l-4 4H3v5h5v-3.05l4-4.2 4 4.2V21h5v-5h-4z"/></svg>
+                    </div>
+                    <h3>Drainage Solutions</h3>
+                    <p>French drains, surface drains, and water management systems.</p>
+                </a>
+                
+                <!-- Concrete Services -->
+                <a href="/commercial-services/concrete-services/" class="service-card">
+                    <div class="service-icon-circle">
+                        <svg viewBox="0 0 24 24"><path d="M19 12h-2v3h-3v2h5v-5zM7 9h3V7H5v5h2V9zm14-6H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16.01H3V4.99h18v14.02z"/></svg>
+                    </div>
+                    <h3>Concrete Services</h3>
+                    <p>Sidewalks, parking lots, ADA ramps, pads, curb grinding & more.</p>
+                </a>
+                
+                <!-- GPR Services (Optional) -->
+                <a href="/commercial-services/gpr-services/" class="service-card">
+                    <div class="service-icon-circle">
+                        <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                    </div>
+                    <h3>GPR Services</h3>
+                    <p>Ground penetrating radar for subsurface investigation.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- =============================================
+         WHY CHOOSE FCS
+         ============================================= -->
+    <section class="section">
+        <div class="container">
+            <div class="two-col">
+                <div class="two-col-image">
+                    <img src="https://fcsfoundationandconcrete.com/wp-content/uploads/2023/05/00FCS-2-team.jpg" alt="FCS Foundation Repair Team">
+                </div>
+                <div class="two-col-content">
+                    <h2>Why Property Managers Choose <span>FCS</span></h2>
+                    <p>When your commercial property's foundation and concrete are at stake, you need a partner who understands the unique demands of commercial projects. Here's why facility directors and property managers across DFW trust FCS:</p>
+                    
+                    <ul class="benefits-list">
+                        <li><strong>Minimal Business Disruption</strong> — We coordinate with tenants and work around your operations</li>
+                        <li><strong>25+ Years Commercial Experience</strong> — Deep expertise in multi-family, industrial, and medical facilities</li>
+                        <li><strong>Complete Documentation</strong> — Detailed reports for insurance, investors, and compliance</li>
+                        <li><strong>Lifetime Transferable Warranty</strong> — Protection that stays with the property</li>
+                        <li><strong>Single-Source Accountability</strong> — Foundation, concrete, drainage, and excavation under one roof</li>
+                        <li><strong>Flexible Scheduling</strong> — Nights, weekends, and phased work available</li>
+                    </ul>
+                    
+                    <a href="/free-foundation-evaluation/" class="btn-primary">Request Commercial Evaluation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- =============================================
+         OUR PROCESS
+         ============================================= -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" style="color: var(--fcs-orange);">How We Work</span>
+                <h2 class="section-title">Our Commercial <span>Process</span></h2>
+                <p class="section-subtitle">A streamlined approach refined over 25+ years to deliver results with minimal disruption.</p>
+            </div>
+            
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Free Evaluation</h3>
+                    <p>Comprehensive on-site assessment with detailed findings and recommendations.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Custom Proposal</h3>
+                    <p>Tailored solution with clear scope, timeline, and transparent pricing.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Coordinated Execution</h3>
+                    <p>Professional installation with minimal disruption to your operations.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Documentation & Warranty</h3>
+                    <p>Complete project records plus lifetime transferable warranty.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- =============================================
+         FAQ SECTION
+         ============================================= -->
+    <section class="section section-gray">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Questions?</span>
+                <h2 class="section-title">Commercial <span>FAQs</span></h2>
+            </div>
+            
+            <div class="faq-container" itemscope itemtype="https://schema.org/FAQPage">
+                <div class="faq-item active" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="faq-question" itemprop="name">
+                        What types of commercial properties do you serve?
+                        <span class="faq-toggle">−</span>
+                    </div>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">We serve a wide range of commercial properties including multi-family (apartments, townhomes, condos, senior living), office buildings, industrial facilities (warehouses, manufacturing), medical offices and clinics, and we partner with home builders for new construction and warranty repairs.</div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="faq-question" itemprop="name">
+                        How much does commercial foundation repair cost?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">Commercial projects vary significantly based on building size, foundation type, and scope of work. We provide free, detailed estimates with no obligation. Our team will assess your specific situation and provide a transparent quote that includes all costs upfront.</div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="faq-question" itemprop="name">
+                        Will repairs disrupt my tenants or business operations?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">We specialize in minimizing disruption. We can work in phases, coordinate around tenant schedules, and offer flexible scheduling including nights and weekends. For multi-family properties, we communicate directly with affected residents to ensure smooth operations throughout the project.</div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="faq-question" itemprop="name">
+                        Do you provide documentation for insurance or property sales?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">Yes, we provide comprehensive documentation including detailed inspection reports, before/after photos, engineering specifications, and warranty certificates. Our documentation is designed to meet the requirements of insurance companies, investors, lenders, and property transaction stakeholders.</div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="faq-question" itemprop="name">
+                        What is your warranty on commercial work?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">We offer a Lifetime Transferable Warranty on our foundation repair work. This warranty stays with the property if ownership changes, providing long-term protection and added value for property transactions. Specific warranty terms vary by service type.</div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="faq-question" itemprop="name">
+                        Do you offer financing for commercial projects?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">Yes, we offer flexible financing options to help manage project costs. We understand that foundation and concrete repairs can be unexpected expenses, and we work with property owners to find payment solutions that fit their budget and cash flow requirements.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- =============================================
+         CTA BANNER
+         ============================================= -->
+    <section class="cta-banner">
+        <div class="container">
+            <h2>Ready to Protect Your Commercial Investment?</h2>
+            <p>Schedule your free commercial evaluation and get expert recommendations for your property.</p>
+            <div class="cta-buttons">
+                <a href="/free-foundation-evaluation/" class="btn-white">Request Free Evaluation</a>
+                <a href="tel:877-554-8284" class="btn-outline-white">Call 877-554-8284</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- =============================================
+         SERVICE AREAS
+         ============================================= -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Commercial Services <span>Throughout DFW</span></h2>
+                <p class="section-subtitle">Proudly serving commercial properties across the Dallas-Fort Worth metroplex.</p>
+            </div>
+            
+            <div class="areas-flex">
+                <a href="/foundation-repair-dallas/" class="area-pill">Dallas</a>
+                <a href="/foundation-repair-fort-worth/" class="area-pill">Fort Worth</a>
+                <a href="/foundation-repair-plano/" class="area-pill">Plano</a>
+                <a href="/foundation-repair-frisco/" class="area-pill">Frisco</a>
+                <a href="/foundation-repair-mckinney/" class="area-pill">McKinney</a>
+                <a href="/foundation-repair-richardson/" class="area-pill">Richardson</a>
+                <a href="/foundation-repair-irving/" class="area-pill">Irving</a>
+                <a href="/foundation-repair-arlington/" class="area-pill">Arlington</a>
+                <a href="/foundation-repair-garland/" class="area-pill">Garland</a>
+                <a href="/foundation-repair-mesquite/" class="area-pill">Mesquite</a>
+                <a href="/foundation-repair-carrolton/" class="area-pill">Carrollton</a>
+                <a href="/foundation-repair-allen/" class="area-pill">Allen</a>
+                <a href="/foundation-repair-rockwall/" class="area-pill">Rockwall</a>
+                <a href="/foundation-repair-grand-prairie/" class="area-pill">Grand Prairie</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- =============================================
+         FOOTER
+         ============================================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Commercial Industries</h4>
+                    <ul>
+                        <li><a href="/commercial-services/multi-family/">Multi-Family</a></li>
+                        <li><a href="/commercial-services/office-corporate/">Office / Corporate</a></li>
+                        <li><a href="/commercial-services/industrial/">Industrial</a></li>
+                        <li><a href="/commercial-services/medical-offices/">Medical Offices</a></li>
+                        <li><a href="/commercial-services/home-builders/">Home Builders</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Commercial Services</h4>
+                    <ul>
+                        <li><a href="/commercial-services/foundation-evaluations/">Foundation Evaluations</a></li>
+                        <li><a href="/commercial-services/foundation-repair/">Foundation Repair</a></li>
+                        <li><a href="/commercial-services/mudjacking-void-fill/">Mudjacking / Void Fill</a></li>
+                        <li><a href="/commercial-services/retaining-walls/">Retaining Walls</a></li>
+                        <li><a href="/commercial-services/drainage-solutions/">Drainage Solutions</a></li>
+                        <li><a href="/commercial-services/concrete-services/">Concrete Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Residential Services</h4>
+                    <ul>
+                        <li><a href="/foundation-repair/">Foundation Repair</a></li>
+                        <li><a href="/concrete-contractor/">Concrete Contractor</a></li>
+                        <li><a href="/drainage-correction-systems/">Drainage Systems</a></li>
+                        <li><a href="/decorative-concrete-services/">Decorative Concrete</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="tel:877-554-8284"><strong>877-554-8284</strong></a></li>
+                        <li><a href="mailto:info@fcsfoundationandconcrete.com">info@fcsfoundationandconcrete.com</a></li>
+                        <li>Dallas, TX 75201</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2026 FCS Foundation Repair and Concrete Services. All Rights Reserved.</p>
+                <p>
+                    <a href="/privacy-policy/">Privacy Policy</a> | 
+                    <a href="/terms-of-service/">Terms & Conditions</a> | 
+                    <a href="/lifetime-transferrable-warranty/">Warranty</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- FAQ Toggle Script -->
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const toggle = question.querySelector('.faq-toggle');
+                const wasActive = item.classList.contains('active');
+                
+                // Close all items
+                document.querySelectorAll('.faq-item').forEach(i => {
+                    i.classList.remove('active');
+                    i.querySelector('.faq-toggle').textContent = '+';
+                });
+                
+                // Open clicked item if it wasn't active
+                if (!wasActive) {
+                    item.classList.add('active');
+                    toggle.textContent = '−';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

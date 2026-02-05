@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office Building Foundation & Concrete Services Dallas | FCS Foundation</title>
+    <meta name="description" content="Office building foundation repair, drainage, retaining walls & concrete services in Dallas-Fort Worth. Corporate campuses, professional centers & commercial offices. Free evaluations.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --fcs-orange: #f7941d;
+            --fcs-orange-dark: #e07d0a;
+            --fcs-orange-light: rgba(247, 148, 29, 0.1);
+            --fcs-blue-dark: #1a2b47;
+            --fcs-blue-medium: #2c4a6e;
+            --fcs-gray-dark: #333333;
+            --fcs-gray-medium: #666666;
+            --fcs-gray-light: #f5f5f5;
+            --fcs-white: #ffffff;
+            --font-heading: 'Montserrat', sans-serif;
+            --font-body: 'Open Sans', sans-serif;
+            --section-padding: 80px 0;
+            --container-max: 1200px;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-body); font-size: 16px; line-height: 1.7; color: var(--fcs-gray-dark); }
+        .container { max-width: var(--container-max); margin: 0 auto; padding: 0 20px; }
+        
+        .header { background: var(--fcs-blue-dark); padding: 15px 0; position: sticky; top: 0; z-index: 1000; }
+        .header-inner { display: flex; justify-content: space-between; align-items: center; max-width: var(--container-max); margin: 0 auto; padding: 0 20px; }
+        .logo img { height: 50px; }
+        .header-phone { background: var(--fcs-orange); color: var(--fcs-white); padding: 12px 25px; border-radius: 5px; text-decoration: none; font-family: var(--font-heading); font-weight: 700; font-size: 18px; transition: background 0.3s; }
+        .header-phone:hover { background: var(--fcs-orange-dark); }
+        .nav-placeholder { background: var(--fcs-blue-medium); padding: 12px 0; text-align: center; color: rgba(255,255,255,0.8); font-size: 14px; }
+        
+        .breadcrumbs { background: var(--fcs-gray-light); padding: 15px 0; font-size: 14px; }
+        .breadcrumbs a { color: var(--fcs-blue-dark); text-decoration: none; }
+        .breadcrumbs a:hover { color: var(--fcs-orange); }
+        .breadcrumbs span { color: var(--fcs-gray-medium); margin: 0 8px; }
+        
+        .hero-sector { background: linear-gradient(rgba(26,43,71,0.9), rgba(26,43,71,0.85)), url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920') center/cover; padding: 90px 0; color: var(--fcs-white); }
+        .hero-sector h1 { font-family: var(--font-heading); font-size: 44px; font-weight: 800; margin-bottom: 15px; }
+        .hero-sector h1 span { color: var(--fcs-orange); }
+        .hero-sector .subtitle { font-size: 20px; max-width: 700px; margin-bottom: 25px; opacity: 0.95; }
+        .hero-cta { display: inline-block; background: var(--fcs-orange); color: var(--fcs-white); padding: 16px 35px; border-radius: 5px; text-decoration: none; font-family: var(--font-heading); font-weight: 700; font-size: 16px; text-transform: uppercase; transition: all 0.3s; }
+        .hero-cta:hover { background: var(--fcs-orange-dark); transform: translateY(-2px); }
+        
+        .section { padding: var(--section-padding); }
+        .section-gray { background: var(--fcs-gray-light); }
+        .section-dark { background: var(--fcs-blue-dark); color: var(--fcs-white); }
+        .section-header { text-align: center; margin-bottom: 50px; }
+        .section-label { display: inline-block; color: var(--fcs-orange); font-family: var(--font-heading); font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; }
+        .section-title { font-family: var(--font-heading); font-size: 34px; font-weight: 700; color: var(--fcs-blue-dark); margin-bottom: 15px; }
+        .section-title span { color: var(--fcs-orange); }
+        .section-dark .section-title { color: var(--fcs-white); }
+        .section-subtitle { font-size: 17px; color: var(--fcs-gray-medium); max-width: 700px; margin: 0 auto; }
+        
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        @media (max-width: 900px) { .two-col { grid-template-columns: 1fr; gap: 40px; } }
+        .two-col-image { border-radius: 12px; overflow: hidden; box-shadow: 0 15px 50px rgba(0,0,0,0.15); }
+        .two-col-image img { width: 100%; height: auto; display: block; }
+        .two-col-content h2 { font-family: var(--font-heading); font-size: 30px; font-weight: 700; color: var(--fcs-blue-dark); margin-bottom: 20px; }
+        .two-col-content h2 span { color: var(--fcs-orange); }
+        .two-col-content p { color: var(--fcs-gray-medium); margin-bottom: 18px; }
+        
+        .property-types-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+        @media (max-width: 1000px) { .property-types-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 550px) { .property-types-grid { grid-template-columns: 1fr; } }
+        
+        .property-type-card { background: var(--fcs-white); border-radius: 10px; padding: 25px 20px; text-align: center; box-shadow: 0 3px 15px rgba(0,0,0,0.06); transition: all 0.3s; border: 2px solid transparent; }
+        .property-type-card:hover { border-color: var(--fcs-orange); transform: translateY(-3px); }
+        .property-type-icon { width: 60px; height: 60px; background: var(--fcs-orange-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; }
+        .property-type-icon svg { width: 28px; height: 28px; fill: var(--fcs-orange); }
+        .property-type-card h3 { font-family: var(--font-heading); font-size: 16px; font-weight: 700; color: var(--fcs-blue-dark); margin-bottom: 8px; }
+        .property-type-card p { font-size: 13px; color: var(--fcs-gray-medium); line-height: 1.5; }
+        
+        .services-links-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; }
+        @media (max-width: 900px) { .services-links-grid { grid-template-columns: repeat(3, 1fr); } }
+        @media (max-width: 600px) { .services-links-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 400px) { .services-links-grid { grid-template-columns: 1fr; } }
+        
+        .service-link-card { background: var(--fcs-white); border-radius: 10px; padding: 30px 20px; text-align: center; text-decoration: none; color: inherit; box-shadow: 0 3px 15px rgba(0,0,0,0.06); transition: all 0.3s; }
+        .service-link-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.12); }
+        .service-link-card:hover .service-link-icon { background: var(--fcs-orange); }
+        .service-link-card:hover .service-link-icon svg { fill: var(--fcs-white); }
+        .service-link-icon { width: 65px; height: 65px; background: var(--fcs-orange-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; transition: all 0.3s; }
+        .service-link-icon svg { width: 30px; height: 30px; fill: var(--fcs-orange); transition: fill 0.3s; }
+        .service-link-card h3 { font-family: var(--font-heading); font-size: 15px; font-weight: 700; color: var(--fcs-blue-dark); }
+        
+        .challenges-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+        @media (max-width: 700px) { .challenges-grid { grid-template-columns: 1fr; } }
+        .challenge-item { display: flex; gap: 15px; padding: 20px; background: rgba(247,148,29,0.08); border-radius: 8px; border-left: 4px solid var(--fcs-orange); }
+        .challenge-icon { width: 24px; height: 24px; fill: var(--fcs-orange); flex-shrink: 0; margin-top: 2px; }
+        .challenge-item h4 { font-family: var(--font-heading); font-size: 16px; font-weight: 700; color: var(--fcs-blue-dark); margin-bottom: 5px; }
+        .challenge-item p { font-size: 14px; color: var(--fcs-gray-medium); margin: 0; }
+        
+        .benefits-list { list-style: none; }
+        .benefits-list li { padding: 12px 0; padding-left: 35px; position: relative; border-bottom: 1px solid #eee; }
+        .benefits-list li:last-child { border-bottom: none; }
+        .benefits-list li::before { content: '✓'; position: absolute; left: 0; top: 12px; width: 24px; height: 24px; background: var(--fcs-orange); color: var(--fcs-white); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; }
+        
+        .case-study-card { background: var(--fcs-white); border-radius: 15px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.1); display: grid; grid-template-columns: 1fr 1fr; }
+        @media (max-width: 800px) { .case-study-card { grid-template-columns: 1fr; } }
+        .case-study-image { min-height: 300px; background-size: cover; background-position: center; }
+        .case-study-content { padding: 40px; }
+        .case-study-label { display: inline-block; background: var(--fcs-orange); color: var(--fcs-white); padding: 5px 15px; border-radius: 20px; font-size: 12px; font-weight: 700; text-transform: uppercase; margin-bottom: 15px; }
+        .case-study-content h3 { font-family: var(--font-heading); font-size: 24px; font-weight: 700; color: var(--fcs-blue-dark); margin-bottom: 15px; }
+        .case-study-content p { color: var(--fcs-gray-medium); margin-bottom: 20px; }
+        .case-study-stats { display: flex; gap: 25px; padding-top: 20px; border-top: 1px solid #eee; flex-wrap: wrap; }
+        .stat-item { text-align: center; }
+        .stat-value { font-family: var(--font-heading); font-size: 28px; font-weight: 800; color: var(--fcs-orange); }
+        .stat-label { font-size: 12px; color: var(--fcs-gray-medium); text-transform: uppercase; }
+        
+        .faq-container { max-width: 900px; margin: 0 auto; }
+        .faq-item { background: var(--fcs-white); border-radius: 8px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); overflow: hidden; }
+        .faq-question { padding: 20px 25px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-family: var(--font-heading); font-size: 16px; font-weight: 600; color: var(--fcs-blue-dark); transition: background 0.3s; }
+        .faq-question:hover { background: var(--fcs-gray-light); }
+        .faq-toggle { width: 26px; height: 26px; background: var(--fcs-orange); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--fcs-white); font-size: 18px; font-weight: 700; flex-shrink: 0; }
+        .faq-answer { padding: 0 25px 20px; color: var(--fcs-gray-medium); display: none; }
+        .faq-item.active .faq-answer { display: block; }
+        .faq-item.active .faq-toggle { background: var(--fcs-blue-dark); }
+        
+        .cta-banner { background: linear-gradient(135deg, var(--fcs-orange), var(--fcs-orange-dark)); padding: 60px 0; text-align: center; color: var(--fcs-white); }
+        .cta-banner h2 { font-family: var(--font-heading); font-size: 32px; font-weight: 700; margin-bottom: 15px; }
+        .cta-banner p { font-size: 18px; margin-bottom: 25px; opacity: 0.95; }
+        .btn-white { display: inline-block; background: var(--fcs-white); color: var(--fcs-orange); padding: 16px 35px; border-radius: 5px; text-decoration: none; font-family: var(--font-heading); font-weight: 700; font-size: 16px; transition: all 0.3s; margin: 0 8px; }
+        .btn-white:hover { background: var(--fcs-blue-dark); color: var(--fcs-white); }
+        .btn-outline-white { display: inline-block; background: transparent; color: var(--fcs-white); padding: 14px 33px; border: 2px solid var(--fcs-white); border-radius: 5px; text-decoration: none; font-family: var(--font-heading); font-weight: 700; font-size: 16px; transition: all 0.3s; margin: 0 8px; }
+        .btn-outline-white:hover { background: var(--fcs-white); color: var(--fcs-orange); }
+        .btn-primary { display: inline-block; background: var(--fcs-orange); color: var(--fcs-white); padding: 15px 30px; border-radius: 5px; text-decoration: none; font-family: var(--font-heading); font-weight: 700; transition: all 0.3s; }
+        .btn-primary:hover { background: var(--fcs-orange-dark); }
+        
+        .footer { background: var(--fcs-blue-dark); color: var(--fcs-white); padding: 60px 0 30px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; margin-bottom: 40px; }
+        @media (max-width: 900px) { .footer-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 550px) { .footer-grid { grid-template-columns: 1fr; } }
+        .footer h4 { font-family: var(--font-heading); font-size: 16px; font-weight: 700; color: var(--fcs-orange); margin-bottom: 20px; }
+        .footer ul { list-style: none; }
+        .footer ul li { margin-bottom: 10px; }
+        .footer ul li a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 14px; transition: color 0.3s; }
+        .footer ul li a:hover { color: var(--fcs-orange); }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 25px; text-align: center; color: rgba(255,255,255,0.5); font-size: 13px; }
+    </style>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Office Building Foundation & Concrete Services",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "FCS Foundation Repair and Concrete Services",
+            "telephone": "877-554-8284"
+        },
+        "serviceType": "Office Building Foundation Services",
+        "areaServed": "Dallas-Fort Worth",
+        "description": "Foundation repair, drainage solutions, retaining walls, concrete services, and excavation for office buildings, corporate campuses, and professional centers."
+    }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <a href="/" class="logo">
+                <img src="https://fcsfoundationandconcrete.com/wp-content/uploads/2024/10/FCS-Logo-White.png" alt="FCS Foundation Repair">
+            </a>
+            <a href="tel:877-554-8284" class="header-phone">877-554-8284</a>
+        </div>
+    </header>
+    <nav class="nav-placeholder">[Navigation Menu]</nav>
+    
+    <nav class="breadcrumbs">
+        <div class="container">
+            <a href="/">Home</a><span>›</span>
+            <a href="/commercial-services/">Commercial Services</a><span>›</span>
+            <strong>Office / Corporate</strong>
+        </div>
+    </nav>
+    
+    <section class="hero-sector">
+        <div class="container">
+            <h1>Office & Corporate <span>Foundation & Concrete</span> Services</h1>
+            <p class="subtitle">Expert foundation repair, drainage, retaining walls, and concrete services for office buildings, corporate campuses, and professional centers throughout Dallas-Fort Worth.</p>
+            <a href="/free-foundation-evaluation/" class="hero-cta">Request Free Office Building Evaluation</a>
+        </div>
+    </section>
+    
+    <section class="section">
+        <div class="container">
+            <div class="two-col">
+                <div class="two-col-content">
+                    <h2>Foundation & Concrete Solutions for <span>Office Properties</span></h2>
+                    <p>Office buildings and corporate facilities demand a level of professionalism and discretion that residential projects don't require. Your tenants expect a comfortable, safe work environment, and your building's appearance directly impacts tenant retention and property value.</p>
+                    <p>At FCS, we understand that foundation issues in office buildings can affect everything from door alignment and HVAC efficiency to employee productivity and your professional image. We've developed repair strategies that address these concerns while minimizing disruption to daily business operations.</p>
+                    <p>Whether you're a property manager overseeing a Class A office tower, a facility director for a corporate campus, or an investor protecting your commercial portfolio, we have the expertise to handle office building projects of any scale.</p>
+                    <a href="#services" class="btn-primary">View Our Services</a>
+                </div>
+                <div class="two-col-image">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800" alt="Modern Office Building">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section section-gray">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Property Types</span>
+                <h2 class="section-title">Office Properties <span>We Serve</span></h2>
+                <p class="section-subtitle">From single-story professional buildings to multi-story corporate headquarters, we have experience with all types of office properties.</p>
+            </div>
+            
+            <div class="property-types-grid">
+                <div class="property-type-card">
+                    <div class="property-type-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg>
+                    </div>
+                    <h3>Class A Office Towers</h3>
+                    <p>Premium high-rise office buildings in prime locations.</p>
+                </div>
+                
+                <div class="property-type-card">
+                    <div class="property-type-icon">
+                        <svg viewBox="0 0 24 24"><path d="M17 11V3H7v4H3v14h8v-4h2v4h8V11h-4zM7 19H5v-2h2v2zm0-4H5v-2h2v2zm0-4H5V9h2v2zm4 4H9v-2h2v2zm0-4H9V9h2v2zm0-4H9V5h2v2zm4 8h-2v-2h2v2zm0-4h-2V9h2v2zm0-4h-2V5h2v2zm4 12h-2v-2h2v2zm0-4h-2v-2h2v2z"/></svg>
+                    </div>
+                    <h3>Corporate Campuses</h3>
+                    <p>Multi-building corporate headquarters and office parks.</p>
+                </div>
+                
+                <div class="property-type-card">
+                    <div class="property-type-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/></svg>
+                    </div>
+                    <h3>Professional Centers</h3>
+                    <p>Single and multi-story professional office buildings.</p>
+                </div>
+                
+                <div class="property-type-card">
+                    <div class="property-type-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3zm0 12.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+                    </div>
+                    <h3>Suburban Office Parks</h3>
+                    <p>Multi-tenant office complexes in suburban locations.</p>
+                </div>
+                
+                <div class="property-type-card">
+                    <div class="property-type-icon">
+                        <svg viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+                    </div>
+                    <h3>Executive Suites</h3>
+                    <p>Shared office spaces and executive suite buildings.</p>
+                </div>
+                
+                <div class="property-type-card">
+                    <div class="property-type-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                    </div>
+                    <h3>Government Buildings</h3>
+                    <p>Municipal, county, and federal office facilities.</p>
+                </div>
+                
+                <div class="property-type-card">
+                    <div class="property-type-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10z"/></svg>
+                    </div>
+                    <h3>Mixed-Use Office</h3>
+                    <p>Office space above retail or in mixed-use developments.</p>
+                </div>
+                
+                <div class="property-type-card">
+                    <div class="property-type-icon">
+                        <svg viewBox="0 0 24 24"><path d="M7 5h10v2h2V3c0-1.1-.9-2-2-2H7c-1.1 0-2 .9-2 2v4h2V5zm8.41 11.59L20 12l-4.59-4.59L14 8.83 17.17 12 14 15.17l1.41 1.42zM10 15.17L6.83 12 10 8.83 8.59 7.41 4 12l4.59 4.59L10 15.17zM17 19H7v-2H5v4c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2v-4h-2v2z"/></svg>
+                    </div>
+                    <h3>Tech & Creative Offices</h3>
+                    <p>Modern tech company and creative agency workspaces.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Services</span>
+                <h2 class="section-title">Office Building <span>Services</span></h2>
+                <p class="section-subtitle">Comprehensive foundation and site services tailored for office and corporate property needs.</p>
+            </div>
+            
+            <div class="services-links-grid">
+                <a href="/commercial-services/office-corporate/foundation-repair/" class="service-link-card">
+                    <div class="service-link-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19 12h-2v3h-3v2h5v-5zM7 9h3V7H5v5h2V9zm14-6H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16.01H3V4.99h18v14.02z"/></svg>
+                    </div>
+                    <h3>Foundation Repair</h3>
+                </a>
+                
+                <a href="/commercial-services/office-corporate/drainage-solutions/" class="service-link-card">
+                    <div class="service-link-icon">
+                        <svg viewBox="0 0 24 24"><path d="M17 16l-4-4V8.82C14.16 8.4 15 7.3 15 6c0-1.66-1.34-3-3-3S9 4.34 9 6c0 1.3.84 2.4 2 2.82V12l-4 4H3v5h5v-3.05l4-4.2 4 4.2V21h5v-5h-4z"/></svg>
+                    </div>
+                    <h3>Drainage Solutions</h3>
+                </a>
+                
+                <a href="/commercial-services/office-corporate/retaining-walls/" class="service-link-card">
+                    <div class="service-link-icon">
+                        <svg viewBox="0 0 24 24"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg>
+                    </div>
+                    <h3>Retaining Walls</h3>
+                </a>
+                
+                <a href="/commercial-services/office-corporate/concrete-services/" class="service-link-card">
+                    <div class="service-link-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19 12h-2v3h-3v2h5v-5zM7 9h3V7H5v5h2V9zm14-6H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16.01H3V4.99h18v14.02z"/></svg>
+                    </div>
+                    <h3>Concrete Services</h3>
+                </a>
+                
+                <a href="/commercial-services/office-corporate/excavation/" class="service-link-card">
+                    <div class="service-link-icon">
+                        <svg viewBox="0 0 24 24"><path d="M18.93 11L15.93 3H8.07L5.07 11H1V13H2.95L5.74 21H9.91L12.5 15L15.09 21H19.26L22.05 13H24V11H18.93Z"/></svg>
+                    </div>
+                    <h3>Excavation</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section section-gray">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Understanding Your Needs</span>
+                <h2 class="section-title">Office Building Foundation <span>Challenges</span></h2>
+                <p class="section-subtitle">We understand the unique challenges facility managers and property owners face with office building foundation issues.</p>
+            </div>
+            
+            <div class="challenges-grid">
+                <div class="challenge-item">
+                    <svg class="challenge-icon" viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+                    <div>
+                        <h4>Business Hours Considerations</h4>
+                        <p>Work must often happen outside normal business hours. We offer flexible scheduling including evenings and weekends to minimize tenant disruption.</p>
+                    </div>
+                </div>
+                
+                <div class="challenge-item">
+                    <svg class="challenge-icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                    <div>
+                        <h4>Tenant Relations</h4>
+                        <p>Multiple tenants mean multiple stakeholders. We coordinate communications and work schedules to maintain positive tenant relationships.</p>
+                    </div>
+                </div>
+                
+                <div class="challenge-item">
+                    <svg class="challenge-icon" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/></svg>
+                    <div>
+                        <h4>Professional Image</h4>
+                        <p>Your building's appearance matters. We maintain clean, professional work sites and restore all areas to pristine condition.</p>
+                    </div>
+                </div>
+                
+                <div class="challenge-item">
+                    <svg class="challenge-icon" viewBox="0 0 24 24"><path d="M19 9l1.25-2.75L23 5l-2.75-1.25L19 1l-1.25 2.75L15 5l2.75 1.25L19 9zm-7.5.5L9 4 6.5 9.5 1 12l5.5 2.5L9 20l2.5-5.5L17 12l-5.5-2.5z"/></svg>
+                    <div>
+                        <h4>Building Systems Impact</h4>
+                        <p>Foundation movement affects HVAC, plumbing, and electrical systems. We coordinate with your facilities team to address all related concerns.</p>
+                    </div>
+                </div>
+                
+                <div class="challenge-item">
+                    <svg class="challenge-icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
+                    <div>
+                        <h4>Lease & Sale Documentation</h4>
+                        <p>Foundation issues impact property transactions and lease negotiations. We provide thorough documentation for all stakeholders.</p>
+                    </div>
+                </div>
+                
+                <div class="challenge-item">
+                    <svg class="challenge-icon" viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
+                    <div>
+                        <h4>Property Value Protection</h4>
+                        <p>Foundation issues can significantly impact property value. Our repairs and documentation help protect your investment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section">
+        <div class="container">
+            <div class="two-col">
+                <div class="two-col-image">
+                    <img src="https://fcsfoundationandconcrete.com/wp-content/uploads/2023/05/00FCS-2-team.jpg" alt="FCS Foundation Team">
+                </div>
+                <div class="two-col-content">
+                    <h2>Why Facility Managers Choose FCS for <span>Office Buildings</span></h2>
+                    <ul class="benefits-list">
+                        <li><strong>After-Hours Scheduling</strong> — We work evenings, nights, and weekends to avoid disrupting your tenants</li>
+                        <li><strong>Professional Worksite Standards</strong> — Clean, organized work areas that maintain your building's image</li>
+                        <li><strong>Tenant Communication Support</strong> — We help you communicate with affected tenants professionally</li>
+                        <li><strong>Building Systems Coordination</strong> — We work with your HVAC, plumbing, and electrical contractors</li>
+                        <li><strong>Transaction-Ready Documentation</strong> — Reports suitable for lease negotiations and property sales</li>
+                        <li><strong>Lifetime Transferable Warranty</strong> — Protection that adds value to your property</li>
+                    </ul>
+                    <a href="/free-foundation-evaluation/" class="btn-primary">Schedule Your Evaluation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section section-gray">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Success Story</span>
+                <h2 class="section-title">Office Building <span>Case Study</span></h2>
+            </div>
+            
+            <div class="case-study-card">
+                <div class="case-study-image" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=800');"></div>
+                <div class="case-study-content">
+                    <span class="case-study-label">Corporate Office</span>
+                    <h3>4-Story Class A Office Building in Las Colinas</h3>
+                    <p>This 85,000 sq ft Class A office building was experiencing foundation settlement that caused door alignment issues, drywall cracking, and tenant complaints about uneven floors. The property management company needed repairs completed without losing any tenants or disrupting daily operations.</p>
+                    <p>FCS developed an after-hours repair plan, completing all interior work between 7 PM and 5 AM. Our crews maintained immaculate work areas, and we coordinated directly with affected tenants. The project was completed on schedule with zero tenant complaints.</p>
+                    <div class="case-study-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">85K</div>
+                            <div class="stat-label">Sq Ft Building</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">42</div>
+                            <div class="stat-label">Piers Installed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">4</div>
+                            <div class="stat-label">Weeks Total</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">0</div>
+                            <div class="stat-label">Business Days Lost</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Common Questions</span>
+                <h2 class="section-title">Office Building <span>FAQs</span></h2>
+            </div>
+            
+            <div class="faq-container" itemscope itemtype="https://schema.org/FAQPage">
+                <div class="faq-item active" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="faq-question" itemprop="name">
+                        Can repairs be done outside business hours?
+                        <span class="faq-toggle">−</span>
+                    </div>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">Absolutely. We regularly perform office building repairs during evenings, nights, and weekends to avoid disrupting your tenants' business operations. Our crews are experienced in working quietly and efficiently during off-hours, and we ensure all work areas are clean and ready for business each morning.</div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="faq-question" itemprop="name">
+                        How do you minimize disruption to tenants?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">We use several strategies: scheduling work during off-hours, completing work in phases to minimize affected areas, maintaining clean and professional work sites, providing advance notice to affected tenants, and ensuring common areas are always accessible. Most tenants don't even realize work is being done.</div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="faq-question" itemprop="name">
+                        Will foundation repair affect my building's HVAC or other systems?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">Foundation movement can affect various building systems over time. As part of our evaluation, we assess the impact on HVAC, plumbing, and electrical systems. We coordinate with your facilities team and contractors to address any related issues, and our repairs help prevent further system impacts.</div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="faq-question" itemprop="name">
+                        Do you provide documentation for property transactions?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">Yes, we provide comprehensive documentation including detailed inspection reports, engineering assessments, before/after photos, and warranty certificates. Our reports are formatted to meet the requirements of commercial real estate transactions, lender due diligence, and lease negotiations.</div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="faq-question" itemprop="name">
+                        What's the typical timeline for an office building project?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">Timeline varies based on building size and scope, but most office building projects can be completed in 2-6 weeks. After-hours scheduling may extend the calendar timeline but eliminates business disruption. We'll provide a detailed schedule after your free evaluation.</div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="faq-question" itemprop="name">
+                        How does foundation repair impact property value?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">Properly repaired foundations with comprehensive documentation and a lifetime warranty can actually enhance property value by eliminating buyer concerns and providing long-term protection. Our documentation helps you demonstrate the quality of repairs to potential buyers, lenders, and tenants.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cta-banner">
+        <div class="container">
+            <h2>Ready to Address Your Office Building Foundation Needs?</h2>
+            <p>Schedule your free property evaluation and get expert recommendations from our commercial team.</p>
+            <a href="/free-foundation-evaluation/" class="btn-white">Request Free Evaluation</a>
+            <a href="tel:877-554-8284" class="btn-outline-white">Call 877-554-8284</a>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Commercial Industries</h4>
+                    <ul>
+                        <li><a href="/commercial-services/multi-family/">Multi-Family</a></li>
+                        <li><a href="/commercial-services/office-corporate/"><strong>Office / Corporate</strong></a></li>
+                        <li><a href="/commercial-services/industrial/">Industrial</a></li>
+                        <li><a href="/commercial-services/medical-offices/">Medical Offices</a></li>
+                        <li><a href="/commercial-services/home-builders/">Home Builders</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Office Building Services</h4>
+                    <ul>
+                        <li><a href="/commercial-services/office-corporate/foundation-repair/">Foundation Repair</a></li>
+                        <li><a href="/commercial-services/office-corporate/drainage-solutions/">Drainage Solutions</a></li>
+                        <li><a href="/commercial-services/office-corporate/retaining-walls/">Retaining Walls</a></li>
+                        <li><a href="/commercial-services/office-corporate/concrete-services/">Concrete Services</a></li>
+                        <li><a href="/commercial-services/office-corporate/excavation/">Excavation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="/about-fcs/">About FCS</a></li>
+                        <li><a href="/lifetime-transferrable-warranty/">Warranty</a></li>
+                        <li><a href="/reviews/">Reviews</a></li>
+                        <li><a href="/contact-us/">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="tel:877-554-8284"><strong>877-554-8284</strong></a></li>
+                        <li><a href="mailto:info@fcsfoundationandconcrete.com">info@fcsfoundationandconcrete.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 FCS Foundation Repair and Concrete Services. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const toggle = question.querySelector('.faq-toggle');
+                const wasActive = item.classList.contains('active');
+                document.querySelectorAll('.faq-item').forEach(i => {
+                    i.classList.remove('active');
+                    i.querySelector('.faq-toggle').textContent = '+';
+                });
+                if (!wasActive) {
+                    item.classList.add('active');
+                    toggle.textContent = '−';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

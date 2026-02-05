@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Office Foundation & Concrete Services Dallas | FCS Foundation</title>
+    <meta name="description" content="Medical office foundation repair, drainage, retaining walls & concrete services in Dallas-Fort Worth. Clinics, healthcare facilities, medical buildings. Free evaluations.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --fcs-orange: #f7941d; --fcs-orange-dark: #e07d0a; --fcs-orange-light: rgba(247, 148, 29, 0.1); --fcs-blue-dark: #1a2b47; --fcs-blue-medium: #2c4a6e; --fcs-gray-dark: #333333; --fcs-gray-medium: #666666; --fcs-gray-light: #f5f5f5; --fcs-white: #ffffff; --font-heading: 'Montserrat', sans-serif; --font-body: 'Open Sans', sans-serif; --section-padding: 80px 0; --container-max: 1200px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-body); font-size: 16px; line-height: 1.7; color: var(--fcs-gray-dark); }
+        .container { max-width: var(--container-max); margin: 0 auto; padding: 0 20px; }
+        .header { background: var(--fcs-blue-dark); padding: 15px 0; position: sticky; top: 0; z-index: 1000; }
+        .header-inner { display: flex; justify-content: space-between; align-items: center; max-width: var(--container-max); margin: 0 auto; padding: 0 20px; }
+        .logo img { height: 50px; }
+        .header-phone { background: var(--fcs-orange); color: var(--fcs-white); padding: 12px 25px; border-radius: 5px; text-decoration: none; font-family: var(--font-heading); font-weight: 700; font-size: 18px; }
+        .nav-placeholder { background: var(--fcs-blue-medium); padding: 12px 0; text-align: center; color: rgba(255,255,255,0.8); font-size: 14px; }
+        .breadcrumbs { background: var(--fcs-gray-light); padding: 15px 0; font-size: 14px; }
+        .breadcrumbs a { color: var(--fcs-blue-dark); text-decoration: none; }
+        .breadcrumbs span { color: var(--fcs-gray-medium); margin: 0 8px; }
+        .hero-sector { background: linear-gradient(rgba(26,43,71,0.9), rgba(26,43,71,0.85)), url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1920') center/cover; padding: 90px 0; color: var(--fcs-white); }
+        .hero-sector h1 { font-family: var(--font-heading); font-size: 44px; font-weight: 800; margin-bottom: 15px; }
+        .hero-sector h1 span { color: var(--fcs-orange); }
+        .hero-sector .subtitle { font-size: 20px; max-width: 700px; margin-bottom: 25px; opacity: 0.95; }
+        .hero-cta { display: inline-block; background: var(--fcs-orange); color: var(--fcs-white); padding: 16px 35px; border-radius: 5px; text-decoration: none; font-family: var(--font-heading); font-weight: 700; font-size: 16px; text-transform: uppercase; }
+        .section { padding: var(--section-padding); }
+        .section-gray { background: var(--fcs-gray-light); }
+        .section-header { text-align: center; margin-bottom: 50px; }
+        .section-label { display: inline-block; color: var(--fcs-orange); font-family: var(--font-heading); font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; }
+        .section-title { font-family: var(--font-heading); font-size: 34px; font-weight: 700; color: var(--fcs-blue-dark); margin-bottom: 15px; }
+        .section-title span { color: var(--fcs-orange); }
+        .section-subtitle { font-size: 17px; color: var(--fcs-gray-medium); max-width: 700px; margin: 0 auto; }
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        @media (max-width: 900px) { .two-col { grid-template-columns: 1fr; gap: 40px; } }
+        .two-col-image { border-radius: 12px; overflow: hidden; box-shadow: 0 15px 50px rgba(0,0,0,0.15); }
+        .two-col-image img { width: 100%; height: auto; display: block; }
+        .two-col-content h2 { font-family: var(--font-heading); font-size: 30px; font-weight: 700; color: var(--fcs-blue-dark); margin-bottom: 20px; }
+        .two-col-content h2 span { color: var(--fcs-orange); }
+        .two-col-content p { color: var(--fcs-gray-medium); margin-bottom: 18px; }
+        .property-types-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+        @media (max-width: 1000px) { .property-types-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 550px) { .property-types-grid { grid-template-columns: 1fr; } }
+        .property-type-card { background: var(--fcs-white); border-radius: 10px; padding: 25px 20px; text-align: center; box-shadow: 0 3px 15px rgba(0,0,0,0.06); transition: all 0.3s; border: 2px solid transparent; }
+        .property-type-card:hover { border-color: var(--fcs-orange); transform: translateY(-3px); }
+        .property-type-icon { width: 60px; height: 60px; background: var(--fcs-orange-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; }
+        .property-type-icon svg { width: 28px; height: 28px; fill: var(--fcs-orange); }
+        .property-type-card h3 { font-family: var(--font-heading); font-size: 16px; font-weight: 700; color: var(--fcs-blue-dark); margin-bottom: 8px; }
+        .property-type-card p { font-size: 13px; color: var(--fcs-gray-medium); line-height: 1.5; }
+        .services-links-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; }
+        @media (max-width: 900px) { .services-links-grid { grid-template-columns: repeat(3, 1fr); } }
+        @media (max-width: 600px) { .services-links-grid { grid-template-columns: repeat(2, 1fr); } }
+        .service-link-card { background: var(--fcs-white); border-radius: 10px; padding: 30px 20px; text-align: center; text-decoration: none; color: inherit; box-shadow: 0 3px 15px rgba(0,0,0,0.06); transition: all 0.3s; }
+        .service-link-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.12); }
+        .service-link-card:hover .service-link-icon { background: var(--fcs-orange); }
+        .service-link-card:hover .service-link-icon svg { fill: var(--fcs-white); }
+        .service-link-icon { width: 65px; height: 65px; background: var(--fcs-orange-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; transition: all 0.3s; }
+        .service-link-icon svg { width: 30px; height: 30px; fill: var(--fcs-orange); transition: fill 0.3s; }
+        .service-link-card h3 { font-family: var(--font-heading); font-size: 15px; font-weight: 700; color: var(--fcs-blue-dark); }
+        .challenges-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+        @media (max-width: 700px) { .challenges-grid { grid-template-columns: 1fr; } }
+        .challenge-item { display: flex; gap: 15px; padding: 20px; background: rgba(247,148,29,0.08); border-radius: 8px; border-left: 4px solid var(--fcs-orange); }
+        .challenge-icon { width: 24px; height: 24px; fill: var(--fcs-orange); flex-shrink: 0; margin-top: 2px; }
+        .challenge-item h4 { font-family: var(--font-heading); font-size: 16px; font-weight: 700; color: var(--fcs-blue-dark); margin-bottom: 5px; }
+        .challenge-item p { font-size: 14px; color: var(--fcs-gray-medium); margin: 0; }
+        .benefits-list { list-style: none; }
+        .benefits-list li { padding: 12px 0; padding-left: 35px; position: relative; border-bottom: 1px solid #eee; }
+        .benefits-list li:last-child { border-bottom: none; }
+        .benefits-list li::before { content: '✓'; position: absolute; left: 0; top: 12px; width: 24px; height: 24px; background: var(--fcs-orange); color: var(--fcs-white); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; }
+        .case-study-card { background: var(--fcs-white); border-radius: 15px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.1); display: grid; grid-template-columns: 1fr 1fr; }
+        @media (max-width: 800px) { .case-study-card { grid-template-columns: 1fr; } }
+        .case-study-image { min-height: 300px; background-size: cover; background-position: center; }
+        .case-study-content { padding: 40px; }
+        .case-study-label { display: inline-block; background: var(--fcs-orange); color: var(--fcs-white); padding: 5px 15px; border-radius: 20px; font-size: 12px; font-weight: 700; text-transform: uppercase; margin-bottom: 15px; }
+        .case-study-content h3 { font-family: var(--font-heading); font-size: 24px; font-weight: 700; color: var(--fcs-blue-dark); margin-bottom: 15px; }
+        .case-study-content p { color: var(--fcs-gray-medium); margin-bottom: 20px; }
+        .case-study-stats { display: flex; gap: 25px; padding-top: 20px; border-top: 1px solid #eee; flex-wrap: wrap; }
+        .stat-item { text-align: center; }
+        .stat-value { font-family: var(--font-heading); font-size: 28px; font-weight: 800; color: var(--fcs-orange); }
+        .stat-label { font-size: 12px; color: var(--fcs-gray-medium); text-transform: uppercase; }
+        .faq-container { max-width: 900px; margin: 0 auto; }
+        .faq-item { background: var(--fcs-white); border-radius: 8px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); overflow: hidden; }
+        .faq-question { padding: 20px 25px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-family: var(--font-heading); font-size: 16px; font-weight: 600; color: var(--fcs-blue-dark); }
+        .faq-toggle { width: 26px; height: 26px; background: var(--fcs-orange); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--fcs-white); font-size: 18px; font-weight: 700; }
+        .faq-answer { padding: 0 25px 20px; color: var(--fcs-gray-medium); display: none; }
+        .faq-item.active .faq-answer { display: block; }
+        .faq-item.active .faq-toggle { background: var(--fcs-blue-dark); }
+        .cta-banner { background: linear-gradient(135deg, var(--fcs-orange), var(--fcs-orange-dark)); padding: 60px 0; text-align: center; color: var(--fcs-white); }
+        .cta-banner h2 { font-family: var(--font-heading); font-size: 32px; font-weight: 700; margin-bottom: 15px; }
+        .cta-banner p { font-size: 18px; margin-bottom: 25px; opacity: 0.95; }
+        .btn-white { display: inline-block; background: var(--fcs-white); color: var(--fcs-orange); padding: 16px 35px; border-radius: 5px; text-decoration: none; font-family: var(--font-heading); font-weight: 700; margin: 0 8px; }
+        .btn-outline-white { display: inline-block; background: transparent; color: var(--fcs-white); padding: 14px 33px; border: 2px solid var(--fcs-white); border-radius: 5px; text-decoration: none; font-family: var(--font-heading); font-weight: 700; margin: 0 8px; }
+        .btn-primary { display: inline-block; background: var(--fcs-orange); color: var(--fcs-white); padding: 15px 30px; border-radius: 5px; text-decoration: none; font-family: var(--font-heading); font-weight: 700; }
+        .footer { background: var(--fcs-blue-dark); color: var(--fcs-white); padding: 60px 0 30px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; margin-bottom: 40px; }
+        @media (max-width: 900px) { .footer-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 550px) { .footer-grid { grid-template-columns: 1fr; } }
+        .footer h4 { font-family: var(--font-heading); font-size: 16px; font-weight: 700; color: var(--fcs-orange); margin-bottom: 20px; }
+        .footer ul { list-style: none; }
+        .footer ul li { margin-bottom: 10px; }
+        .footer ul li a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 14px; }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 25px; text-align: center; color: rgba(255,255,255,0.5); font-size: 13px; }
+    </style>
+</head>
+<body>
+    <header class="header"><div class="header-inner"><a href="/" class="logo"><img src="https://fcsfoundationandconcrete.com/wp-content/uploads/2024/10/FCS-Logo-White.png" alt="FCS Foundation Repair"></a><a href="tel:877-554-8284" class="header-phone">877-554-8284</a></div></header>
+    <nav class="nav-placeholder">[Navigation Menu]</nav>
+    <nav class="breadcrumbs"><div class="container"><a href="/">Home</a><span>›</span><a href="/commercial-services/">Commercial Services</a><span>›</span><strong>Medical Offices</strong></div></nav>
+    
+    <section class="hero-sector"><div class="container"><h1>Medical Office <span>Foundation & Concrete</span> Services</h1><p class="subtitle">Specialized foundation repair, drainage, retaining walls, and concrete services for medical offices, clinics, and healthcare facilities throughout Dallas-Fort Worth.</p><a href="/free-foundation-evaluation/" class="hero-cta">Request Free Medical Office Evaluation</a></div></section>
+    
+    <section class="section"><div class="container"><div class="two-col"><div class="two-col-content"><h2>Foundation & Concrete Solutions for <span>Healthcare Facilities</span></h2><p>Medical facilities have unique requirements that extend beyond typical commercial properties. Sensitive medical equipment, strict regulatory compliance, patient safety, and the critical nature of healthcare services demand specialized expertise and careful planning.</p><p>At FCS, we understand that medical offices cannot simply close for repairs. Your patients depend on you, and your practice depends on maintaining a safe, professional environment. We've developed repair strategies specifically for healthcare facilities that minimize disruption while meeting the highest standards.</p><p>Whether you're a practice administrator dealing with foundation issues affecting your imaging equipment, a healthcare system managing multiple facilities, or a medical building owner protecting your investment, we have the expertise and discretion your facility requires.</p><a href="#services" class="btn-primary">View Our Services</a></div><div class="two-col-image"><img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800" alt="Medical Office Building"></div></div></div></section>
+    
+    <section class="section section-gray"><div class="container"><div class="section-header"><span class="section-label">Property Types</span><h2 class="section-title">Medical Properties <span>We Serve</span></h2><p class="section-subtitle">From single-physician practices to large medical complexes, we have experience with all types of healthcare facilities.</p></div>
+    <div class="property-types-grid">
+        <div class="property-type-card"><div class="property-type-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"/></svg></div><h3>Medical Office Buildings</h3><p>Multi-tenant medical office complexes and MOBs.</p></div>
+        <div class="property-type-card"><div class="property-type-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93z"/></svg></div><h3>Outpatient Clinics</h3><p>Surgery centers, urgent care, and specialty clinics.</p></div>
+        <div class="property-type-card"><div class="property-type-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg></div><h3>Diagnostic Centers</h3><p>Imaging, lab, and diagnostic testing facilities.</p></div>
+        <div class="property-type-card"><div class="property-type-icon"><svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg></div><h3>Physician Practices</h3><p>Single and multi-physician private practices.</p></div>
+        <div class="property-type-card"><div class="property-type-icon"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2z"/></svg></div><h3>Dental Offices</h3><p>General and specialty dental practices.</p></div>
+        <div class="property-type-card"><div class="property-type-icon"><svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5z"/></svg></div><h3>Vision Centers</h3><p>Optometry and ophthalmology practices.</p></div>
+        <div class="property-type-card"><div class="property-type-icon"><svg viewBox="0 0 24 24"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg></div><h3>Rehabilitation Centers</h3><p>Physical therapy and rehabilitation facilities.</p></div>
+        <div class="property-type-card"><div class="property-type-icon"><svg viewBox="0 0 24 24"><path d="M19 9.3V4h-3v2.6L12 3 2 12h3v8h6v-6h2v6h6v-8h3l-3-2.7z"/></svg></div><h3>Veterinary Clinics</h3><p>Animal hospitals and veterinary practices.</p></div>
+    </div></div></section>
+    
+    <section class="section" id="services"><div class="container"><div class="section-header"><span class="section-label">Our Services</span><h2 class="section-title">Medical Office <span>Services</span></h2><p class="section-subtitle">Specialized foundation and site services designed for healthcare facility requirements.</p></div>
+    <div class="services-links-grid">
+        <a href="/commercial-services/medical-offices/foundation-repair/" class="service-link-card"><div class="service-link-icon"><svg viewBox="0 0 24 24"><path d="M19 12h-2v3h-3v2h5v-5zM7 9h3V7H5v5h2V9zm14-6H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg></div><h3>Foundation Repair</h3></a>
+        <a href="/commercial-services/medical-offices/drainage-solutions/" class="service-link-card"><div class="service-link-icon"><svg viewBox="0 0 24 24"><path d="M17 16l-4-4V8.82C14.16 8.4 15 7.3 15 6c0-1.66-1.34-3-3-3S9 4.34 9 6c0 1.3.84 2.4 2 2.82V12l-4 4H3v5h5v-3.05l4-4.2 4 4.2V21h5v-5h-4z"/></svg></div><h3>Drainage Solutions</h3></a>
+        <a href="/commercial-services/medical-offices/retaining-walls/" class="service-link-card"><div class="service-link-icon"><svg viewBox="0 0 24 24"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg></div><h3>Retaining Walls</h3></a>
+        <a href="/commercial-services/medical-offices/concrete-services/" class="service-link-card"><div class="service-link-icon"><svg viewBox="0 0 24 24"><path d="M19 12h-2v3h-3v2h5v-5zM7 9h3V7H5v5h2V9z"/></svg></div><h3>Concrete Services</h3></a>
+        <a href="/commercial-services/medical-offices/excavation/" class="service-link-card"><div class="service-link-icon"><svg viewBox="0 0 24 24"><path d="M18.93 11L15.93 3H8.07L5.07 11H1V13H2.95L5.74 21H9.91L12.5 15L15.09 21H19.26L22.05 13H24V11H18.93Z"/></svg></div><h3>Excavation</h3></a>
+    </div></div></section>
+    
+    <section class="section section-gray"><div class="container"><div class="section-header"><span class="section-label">Understanding Your Needs</span><h2 class="section-title">Medical Facility <span>Challenges</span></h2></div>
+    <div class="challenges-grid">
+        <div class="challenge-item"><svg class="challenge-icon" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"/></svg><div><h4>Sensitive Equipment Concerns</h4><p>MRI machines, CT scanners, and diagnostic equipment require precise calibration. We coordinate repairs to minimize equipment impact and recalibration needs.</p></div></div>
+        <div class="challenge-item"><svg class="challenge-icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg><div><h4>Patient Experience</h4><p>Your patients expect a professional, comfortable environment. We maintain clean, quiet work areas and schedule around patient appointments.</p></div></div>
+        <div class="challenge-item"><svg class="challenge-icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6z"/></svg><div><h4>Regulatory Compliance</h4><p>Healthcare facilities face strict regulatory requirements. We provide documentation that supports your compliance with OSHA, ADA, and facility regulations.</p></div></div>
+        <div class="challenge-item"><svg class="challenge-icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2z"/></svg><div><h4>Infection Control</h4><p>Healthcare environments require strict cleanliness standards. Our crews follow healthcare-appropriate protocols to maintain sterile environments.</p></div></div>
+        <div class="challenge-item"><svg class="challenge-icon" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg><div><h4>ADA Accessibility</h4><p>Foundation issues can create ADA compliance problems. Our repairs restore proper accessibility throughout your facility.</p></div></div>
+        <div class="challenge-item"><svg class="challenge-icon" viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg><div><h4>Practice Revenue Impact</h4><p>Downtime means lost revenue. We work around your schedule to keep your practice operating and generating revenue during repairs.</p></div></div>
+    </div></div></section>
+    
+    <section class="section"><div class="container"><div class="two-col"><div class="two-col-image"><img src="https://fcsfoundationandconcrete.com/wp-content/uploads/2023/05/00FCS-2-team.jpg" alt="FCS Foundation Team"></div><div class="two-col-content"><h2>Why Healthcare Administrators Choose FCS for <span>Medical Facilities</span></h2><ul class="benefits-list"><li><strong>Healthcare-Appropriate Protocols</strong> — Clean, quiet work practices that maintain your professional environment</li><li><strong>Equipment Coordination</strong> — We work with your equipment vendors to minimize calibration impacts</li><li><strong>After-Hours Scheduling</strong> — Evenings, weekends, and between-patient scheduling available</li><li><strong>Compliance Documentation</strong> — Reports formatted for regulatory compliance and accreditation</li><li><strong>ADA Restoration</strong> — Repairs that restore full accessibility throughout your facility</li><li><strong>Lifetime Transferable Warranty</strong> — Long-term protection for your healthcare investment</li></ul><a href="/free-foundation-evaluation/" class="btn-primary">Schedule Your Evaluation</a></div></div></div></section>
+    
+    <section class="section section-gray"><div class="container"><div class="section-header"><span class="section-label">Success Story</span><h2 class="section-title">Medical Office <span>Case Study</span></h2></div>
+    <div class="case-study-card"><div class="case-study-image" style="background-image: url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800');"></div><div class="case-study-content"><span class="case-study-label">Imaging Center</span><h3>Multi-Specialty Imaging Center in Richardson</h3><p>This diagnostic imaging center with MRI, CT, and X-ray equipment was experiencing foundation settlement that threatened equipment calibration and created ADA compliance issues in patient corridors.</p><p>FCS developed a phased repair plan coordinated with the imaging equipment manufacturer. All work was completed during evenings and weekends to avoid any disruption to patient appointments. Equipment recalibration was minimal.</p><div class="case-study-stats"><div class="stat-item"><div class="stat-value">12K</div><div class="stat-label">Sq Ft Facility</div></div><div class="stat-item"><div class="stat-value">28</div><div class="stat-label">Piers Installed</div></div><div class="stat-item"><div class="stat-value">3</div><div class="stat-label">Weeks Total</div></div><div class="stat-item"><div class="stat-value">0</div><div class="stat-label">Patient Appointments Missed</div></div></div></div></div></div></section>
+    
+    <section class="section"><div class="container"><div class="section-header"><span class="section-label">Common Questions</span><h2 class="section-title">Medical Office <span>FAQs</span></h2></div>
+    <div class="faq-container">
+        <div class="faq-item active"><div class="faq-question">Will repairs affect our medical equipment?<span class="faq-toggle">−</span></div><div class="faq-answer">We coordinate with your equipment vendors before any work begins. For sensitive equipment like MRI and CT scanners, we develop repair plans that minimize vibration and movement. In most cases, equipment recalibration needs are minimal or unnecessary.</div></div>
+        <div class="faq-item"><div class="faq-question">Can you work around our patient schedule?<span class="faq-toggle">+</span></div><div class="faq-answer">Absolutely. We routinely schedule work during evenings, weekends, and between patient appointments. We can also work in phases, completing one area at a time while you maintain operations in other parts of the facility.</div></div>
+        <div class="faq-item"><div class="faq-question">How do you maintain cleanliness standards?<span class="faq-toggle">+</span></div><div class="faq-answer">Our crews follow healthcare-appropriate protocols including dust containment, clean work areas, and proper waste disposal. We understand the importance of maintaining a sterile environment and take extra precautions in medical facilities.</div></div>
+        <div class="faq-item"><div class="faq-question">Do you provide compliance documentation?<span class="faq-toggle">+</span></div><div class="faq-answer">Yes, we provide comprehensive documentation including engineering reports, before/after measurements, ADA compliance verification, and warranty certificates. Our reports are formatted to support OSHA compliance, accreditation requirements, and facility audits.</div></div>
+        <div class="faq-item"><div class="faq-question">Can foundation issues affect ADA compliance?<span class="faq-toggle">+</span></div><div class="faq-answer">Yes, foundation settlement can create uneven floors, door alignment issues, and accessibility problems. Our repairs restore proper floor levels and door operation, helping you maintain ADA compliance throughout your facility.</div></div>
+    </div></div></section>
+    
+    <section class="cta-banner"><div class="container"><h2>Ready to Address Your Medical Office Foundation Needs?</h2><p>Schedule your free facility evaluation and get expert recommendations from our healthcare team.</p><a href="/free-foundation-evaluation/" class="btn-white">Request Free Evaluation</a><a href="tel:877-554-8284" class="btn-outline-white">Call 877-554-8284</a></div></section>
+    
+    <footer class="footer"><div class="container"><div class="footer-grid"><div><h4>Commercial Industries</h4><ul><li><a href="/commercial-services/multi-family/">Multi-Family</a></li><li><a href="/commercial-services/office-corporate/">Office / Corporate</a></li><li><a href="/commercial-services/industrial/">Industrial</a></li><li><a href="/commercial-services/medical-offices/"><strong>Medical Offices</strong></a></li><li><a href="/commercial-services/home-builders/">Home Builders</a></li></ul></div><div><h4>Medical Office Services</h4><ul><li><a href="/commercial-services/medical-offices/foundation-repair/">Foundation Repair</a></li><li><a href="/commercial-services/medical-offices/drainage-solutions/">Drainage Solutions</a></li><li><a href="/commercial-services/medical-offices/retaining-walls/">Retaining Walls</a></li><li><a href="/commercial-services/medical-offices/concrete-services/">Concrete Services</a></li><li><a href="/commercial-services/medical-offices/excavation/">Excavation</a></li></ul></div><div><h4>Company</h4><ul><li><a href="/about-fcs/">About FCS</a></li><li><a href="/lifetime-transferrable-warranty/">Warranty</a></li><li><a href="/reviews/">Reviews</a></li><li><a href="/contact-us/">Contact Us</a></li></ul></div><div><h4>Contact Us</h4><ul><li><a href="tel:877-554-8284"><strong>877-554-8284</strong></a></li><li><a href="mailto:info@fcsfoundationandconcrete.com">info@fcsfoundationandconcrete.com</a></li></ul></div></div><div class="footer-bottom"><p>© 2026 FCS Foundation Repair and Concrete Services. All Rights Reserved.</p></div></div></footer>
+    
+    <script>document.querySelectorAll('.faq-question').forEach(q=>{q.addEventListener('click',()=>{const i=q.parentElement,t=q.querySelector('.faq-toggle'),a=i.classList.contains('active');document.querySelectorAll('.faq-item').forEach(x=>{x.classList.remove('active');x.querySelector('.faq-toggle').textContent='+';});if(!a){i.classList.add('active');t.textContent='−';}});});</script>
+</body>
+</html>
